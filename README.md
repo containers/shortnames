@@ -11,7 +11,7 @@ container engines that allow you to specify more then a single registry for
 storing container images, using short names can lead to ambiguity. Imageine
 that I have two registries defined and both container an image names foobar.
 
-Now if I specify foobar, I am not sure which image I will get. There is potential for crackers to take advantage of this by spoofing images and tricking users
+Now if I specify foobar, I am not sure which image I will get. There is potential for malicious parties to take advantage of this by spoofing images and tricking users
 into pulling them.
 
 We are building into these contaienr engine tools the ability to use short name
