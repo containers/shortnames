@@ -8,11 +8,12 @@ When tools like [Podman][podman-gh] or [Docker][[docker-cli-gh]] pull container 
 short names like `fedora` or `alpine` rather then fully specified image names
 `registry.fedoraproject.org/fedora` and `docker.io/alpine`, respectively. In
 container engines that allow you to specify more then a single registry for
-storing container images, using short names can lead to ambiguity. Imagine
-that I have two registries defined and both container an image names foobar.
+storing container images, using short names can lead to ambiguity.
 
-Now if I specify foobar, I am not sure which image I will get. There is potential for malicious parties to take advantage of this by spoofing images and tricking users
-into pulling them.
+Imagine that I have two registries defined and both contain an image named
+"foobar". Now if I specify `foobar`, I am not sure which image I will
+get. There is potential for malicious parties to take advantage of this by
+spoofing images and tricking users into pulling them.
 
 We are building into these container engine tools the ability to use short name
 aliases to help mitigate the risk of pulling the wrong image, especially when
