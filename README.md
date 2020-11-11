@@ -8,13 +8,13 @@ When tools like [Podman][podman-gh] or [Docker][[docker-cli-gh]] pull container 
 short names like `fedora` or `alpine` rather then fully specified image names
 `registry.fedoraproject.org/fedora` and `docker.io/alpine`, respectively. In
 container engines that allow you to specify more then a single registry for
-storing container images, using short names can lead to ambiguity. Imageine
+storing container images, using short names can lead to ambiguity. Imagine
 that I have two registries defined and both container an image names foobar.
 
 Now if I specify foobar, I am not sure which image I will get. There is potential for malicious parties to take advantage of this by spoofing images and tricking users
 into pulling them.
 
-We are building into these contaienr engine tools the ability to use short name
+We are building into these container engine tools the ability to use short name
 aliases to help mitigate the risk of pulling the wrong image, especially when
 the image is a well known short name.
 
@@ -34,7 +34,7 @@ registries.conf file, Podman will resolve “fedora” immediately and securely 
 “registry.fedoraproject.org/fedora”. We are currently assembling a public list
 of short-name aliases that can be used across the community. Multiple Linux
 distributions and companies have expressed interest in collaborating the
-containe engines, to help registry their images.
+container engines, to help registry their images.
 
 ## Goal
 
@@ -50,10 +50,10 @@ In the case of a conflicts, we will base the shortname on the original source of
 the image.  For example if the Fedora image is available at docker.io as well
 as registry.fedoraproject.org, we will grab it from fedoraproject.
 
-I am sure over time their might be futher rules designed if this turns out to
+I am sure over time their might be further rules designed if this turns out to
 be a problem.
 
-Of course distributions are always free to make shanges to this list if/when
+Of course distributions are always free to make changes to this list if/when
 they ship it.
 
 ## Contributing
