@@ -6,7 +6,7 @@
 
 When tools like Podman or Docker pull container images, users prefer to use
 short names like `fedora` or `alpine` rather then fully specified image names
-registry.fedoraproject.org/fedora and docker.io/alpine respectively. In
+`registry.fedoraproject.org/fedora` and `docker.io/alpine`, respectively. In
 container engines that allow you to specify more then a single registry for
 storing container images, using short names can lead to ambiguity. Imageine
 that I have two registries defined and both container an image names foobar.
