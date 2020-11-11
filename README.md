@@ -19,9 +19,9 @@ We are building into these container engine tools the ability to use short name
 aliases to help mitigate the risk of pulling the wrong image, especially when
 the image is a well known short name.
 
-Similar to aliases in BASH, a short-name alias has a left-hand name that is
+Similar to aliases in shells such as Bash, a short-name alias has a left-hand name that is
 being replaced with a right-hand value. Short-name aliases can now be
-configured in the registries.conf file as follows:
+configured in the 'registries.conf' file as follows:
 
 ```
 unqualified-search-registries=[“registry.fedoraproject.org”, “docker.io”]
