@@ -24,10 +24,10 @@ being replaced with a right-hand value. Short-name aliases can now be
 configured in the 'registries.conf' file as follows:
 
 ```
-unqualified-search-registries=[“registry.fedoraproject.org”, “docker.io”]
+unqualified-search-registries=["registry.fedoraproject.org", "docker.io"]
 
 [aliases]
-“fedora”=”registry.fedoraproject.org/fedora”
+"fedora"="registry.fedoraproject.org/fedora"
 ```
 
 All aliases must be specified in the new “aliases” table. Using the upper
