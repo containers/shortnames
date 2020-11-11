@@ -30,26 +30,26 @@ unqualified-search-registries=["registry.fedoraproject.org", "docker.io"]
 "fedora"="registry.fedoraproject.org/fedora"
 ```
 
-All aliases must be specified in the new “aliases” table. Using the upper
-registries.conf file, Podman will resolve “fedora” immediately and securely to
+All aliases must be specified in the new “aliases” table. Using the above
+'registries.conf' file, Podman will resolve “fedora” immediately and securely to
 “registry.fedoraproject.org/fedora”. We are currently assembling a public list
 of short-name aliases that can be used across the community. Multiple Linux
-distributions and companies have expressed interest in collaborating the
+distributions and companies have expressed interest in collaborating with the
 container engines, to help registry their images.
 
 ## Goal
 
 The goal of this REPO is to gather a list of shortnames from the community, to
-allow distributions to ship them in there distributions. The idea is this list
-could be added to the default registries.conf file shipped by a distro.
+allow distributions to ship them in their distributions. The idea is this list
+could be added to the default 'registries.conf' file shipped by a distro.
 
 This list is in the open to guarantee fairness.  We do not want this to be a
 free for all land grab, so we will base the list of images on well images
 at well known registries and distributions.
 
 In the case of a conflicts, we will base the shortname on the original source of
-the image.  For example if the Fedora image is available at docker.io as well
-as registry.fedoraproject.org, we will grab it from fedoraproject.
+the image.  For example if the Fedora image is available at 'docker.io' as well
+as at 'registry.fedoraproject.org', we will grab it from fedoraproject.
 
 I am sure over time their might be further rules designed if this turns out to
 be a problem.
