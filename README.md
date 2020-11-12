@@ -4,7 +4,7 @@
 
 ## What is a short name
 
-When tools like [Podman][podman-gh] or [Docker][[docker-cli-gh]] pull container images, users prefer to use
+When tools like [Podman][podman-gh] or [Docker][docker-cli-gh] pull container images, users prefer to use
 short names like `fedora` or `alpine` rather then fully specified image names
 `registry.fedoraproject.org/fedora` and `docker.io/alpine`, respectively. In
 container engines that allow you to specify more then a single registry for
