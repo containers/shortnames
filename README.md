@@ -62,6 +62,9 @@ they ship it.
 Please verify that you are not conflicting with existing shortnames, or state
 your case on why your shortname should replace the existing short names.
 
+## Shipping and Packaging Short-Name Aliases
+
+The configuration file is intended to be shipped in the `/etc/containers/registries.conf.d` directory.  This directory allows for supporting drop-in `regististries.conf` configuration files that are loaded in alpha-numerical order.  Users can easily add new files manually or via config managers such as Ansible or Salt.  Please refer to the [upstream documentation of the containers/image library](https://github.com/containers/image/tree/master/docs) to read more about the `registries.conf` format, and the loading behavior.
 
 ## Contact
 
