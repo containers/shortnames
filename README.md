@@ -43,12 +43,12 @@ The goal of this REPO is to gather a list of shortnames from the community, to
 allow distributions to ship them in their distributions. The idea is this list
 could be added to the default 'registries.conf' file shipped by a distro.
 
-This list is in the open to guarantee fairness.  We do not want this to be a
-free for all land grab, so we will base the list of images on well images
+This list is in the open to guarantee fairness. We do not want this to be a
+free for all land grab, so we will base the list of images on images
 at well known registries and distributions.
 
 In the case of a conflicts, we will base the shortname on the original source of
-the image.  For example if the Fedora image is available at 'docker.io' as well
+the image. For example if the Fedora image is available at 'docker.io' as well
 as at 'registry.fedoraproject.org', we will grab it from fedoraproject.
 
 I am sure over time their might be further rules designed if this turns out to
@@ -64,7 +64,7 @@ your case on why your shortname should replace the existing short names.
 
 ## Shipping and Packaging Short-Name Aliases
 
-The configuration file is intended to be shipped in the `/etc/containers/registries.conf.d` directory.  This directory allows for supporting drop-in `regististries.conf` configuration files that are loaded in alpha-numerical order.  Users can easily add new files manually or via config managers such as Ansible or Salt.  Please refer to the [upstream documentation of the containers/image library](https://github.com/containers/image/tree/master/docs) to read more about the `registries.conf` format, and the loading behavior.
+The configuration file is intended to be shipped in the `/etc/containers/registries.conf.d` directory. This directory allows for supporting drop-in `registries.conf` configuration files that are loaded in alpha-numerical order. Users can easily add new files manually or via config managers such as Ansible or Salt. Please refer to the [upstream documentation of the containers/image library](https://github.com/containers/image/tree/master/docs) to read more about the `registries.conf` format, and the loading behavior.
 
 ## Contact
 
