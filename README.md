@@ -69,6 +69,8 @@ The configuration file is intended to be shipped in the `/etc/containers/registr
 ## Contact
 
 - IRC: #[containers](ircs://irc.libera.chat:6697/#containers) on libera.chat ([Webchat](https://web.libera.chat/))
+- [![Chat on Matrix](https://matrix.to/img/matrix-badge.svg)](https://matrix.to/#/#containers:libera.chat)
+
 
 [podman-gh]:      https://github.com/containers/podman  "GitHub: containers/podman"
 [docker-cli-gh]:  https://github.com/docker/cli         "GitHub: docker/cli"
