@@ -17,6 +17,7 @@ def get_images_to_inspect() -> list[str]:
             "rhel7-minimal",
             "leap-dnf",
             "leap-microdnf",
+            "rhel9-bootc",
         )
     ]
 
