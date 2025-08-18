@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "shortnames"
+version = "2022.02.08"
+description = "Shortnames project is collecting registry alias names for shortnames to fully specified container image names."
+authors = ["Daniel J Walsh <dwalsh@redhat.com>", "Valentin Rothberg <rothberg@redhat.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+toml = "^0.10"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=22.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

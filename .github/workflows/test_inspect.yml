@@ -1,0 +1,26 @@
+---
+name: Check aliases
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+
+jobs:
+  check-inspect:
+    name: use skopeo to check whether all images in shortnames.conf are reachable
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: install poetry, skopeo and other dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-poetry python3-toml skopeo
+
+      - name: try to inspect all container images
+        run: |
+          poetry config virtualenvs.create false
+          poetry run ./inspect-images.py
